@@ -10,6 +10,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ManageComponent } from './components/manage/manage.component';
 import { FormsModule } from '@angular/forms';
 import { AppRoutes } from './app.routes';
+import { CardTypeDirective } from './directives/card-type.directive';
+import { CardHoverDirective } from './directives/card-hover.directive';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { AppRoutes } from './app.routes';
     SummaryComponent,
     DashboardComponent,
     ManageComponent,
+    CardTypeDirective,
+    CardHoverDirective,
   ],
   imports: [
     BrowserModule,

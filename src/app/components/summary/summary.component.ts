@@ -17,12 +17,4 @@ export class SummaryComponent implements OnInit {
   ngOnInit(): void {
     console.log('Inside summary component');
   }
-
-  isNegative() {
-    return (this.stock && this.stock.change < 0);
-  }
-
-  isPositive() {
-    return (this.stock && this.stock.change > 0);
-  }
 }
