@@ -40,4 +40,6 @@ export class StocksService {
         + 'snapshot?symbols=' + symbols.join())
     }
   }
+
+
 }

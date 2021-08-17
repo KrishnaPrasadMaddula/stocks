@@ -12,6 +12,10 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutes } from './app.routes';
 import { CardTypeDirective } from './directives/card-type.directive';
 import { CardHoverDirective } from './directives/card-hover.directive';
+import { DelayDirective } from './directives/delay.directive';
+import { ChangePipe } from './pipes/change.pipe';
+import { CurrencyPipe, PercentPipe } from '@angular/common';
+import { ChangeDetectorPipe } from './pipes/change-detector.pipe';
 
 
 @NgModule({
@@ -22,6 +26,9 @@ import { CardHoverDirective } from './directives/card-hover.directive';
     ManageComponent,
     CardTypeDirective,
     CardHoverDirective,
+    DelayDirective,
+    ChangePipe,
+    ChangeDetectorPipe,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,9 @@ import { CardHoverDirective } from './directives/card-hover.directive';
     FormsModule,
     AppRoutes,
   ],
-  providers: [StocksService],
+  providers: [StocksService,
+    CurrencyPipe,
+    PercentPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
